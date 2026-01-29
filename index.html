@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing page</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  background:#000;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  position:relative;
+}
+
+/* BACKGROUND */
+.background{
+  position:fixed;
+  inset:0;
+  background:url('https://xplearn.site/wp-content/uploads/2025/05/360_F_1079081584_rBAxIfWfaBLGG0FjT4q7vz9OUHXa1HpR.jpg') center/cover no-repeat;
+  filter:blur(1px);
+  z-index:-2;
+}
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:-1;
+}
+
+/* CARD */
+.container{
+  width:100%;
+  max-width:420px;
+  z-index:2;
+}
+
+.blur-box{
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(12px);
+  border-radius:16px;
+  padding:26px;
+  text-align:center;
+  box-shadow:0 8px 30px rgba(0,230,255,.35);
+}
+
+/* TEXT */
+h1{
+  font-size:24px;
+  color:#00e6ff;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.timer{
+  font-size:22px;
+  font-weight:700;
+  margin:10px 0;
+  color:#ffeb3b;
+}
+
+.profile img{
+  width:150px;
+  border-radius:50%;
+  margin:10px 0;
+  border:3px solid #00e6ff;
+  box-shadow:0 0 18px #00e6ff;
+}
+
+.view-btn{
+  display:inline-block;
+  margin:15px auto;
+  padding:14px 26px;
+  border-radius:40px;
+  font-weight:700;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+  background:linear-gradient(45deg,#32B0ED,#3a7bd5);
+  box-shadow:0 15px 30px rgba(50,176,237,.8);
+}
+
+.footer-text{
+  font-size:13px;
+  opacity:.85;
+  margin-top:12px;
+}
+
+/* POWERED BY */
+.powered-by{
+  margin-top:16px;
+  font-size:12px;
+  color:#00e6ff;
+  font-weight:600;
+  text-align:center;
+}
+
+.powered-by a{
+  color:#00ffcc;
+  text-decoration:none;
+}
+.powered-by a:hover{
+  text-decoration:underline;
+}
+</style>
+</head>
+
+<!-- 🔥 Dynamic Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+// init pixel
+fbq('init', '3040268282836225');
+
+// Send unique UUID as event parameter
+fbq('track', 'PageView', { uuid: "d9ecf06c-62c0-4c9e-8240-113d82823664" });
+</script>
+
+<!-- Pixel NoScript Fallback -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3040268282836225&ev=PageView&noscript=1"/>
+</noscript>
+
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<div class="container">
+  <div class="blur-box">
+
+    <h1>PR@FIT 4 PR@FIT
+</h1>
+    <p>💰 100% Free Options Trade with Up to 95% Accuracy! 🎯</p>
+
+    <div class="timer">
+      Redirecting in <span id="countdown">3</span> seconds...
+    </div>
+
+    <div class="profile">
+      <img src="https://onebyone.site/wp-content/uploads/2026/01/pp4p.jpg">
+    </div>
+
+    <h2>55,453 Subscribers</h2>
+    <p>✅Precision Trades. Professional Mindset.
+
+💹</p>
+
+    <a href="https://t.me/+cio53yX4MSQyMjI1" class="view-btn">
+      JOIN NOW FOR FREE
+    </a>
+
+    <p class="footer-text">
+      💎 Trusted by thousands of traders worldwide! 🌍
+    </p>
+
+    <div class="powered-by">
+      Powered by
+      <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank">
+        Nexgroww Agency
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ⏳ TIMER + AUTO REDIRECT SCRIPT -->
+<script>
+let timeLeft = 3;
+const countdownEl = document.getElementById("countdown");
+
+const redirectUrl = "https://t.me/+nyFvrbBTfrUyZTll";
+
+const timer = setInterval(() => {
+  timeLeft--;
+  countdownEl.textContent = timeLeft;
+
+  if (timeLeft <= 0) {
+    clearInterval(timer);
+    window.location.href = redirectUrl;
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
