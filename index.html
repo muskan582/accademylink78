@@ -2,85 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>PR@FIT 4 PR@FIT | Join Now</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landing page</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-
-body{
-  background:#000;
-  color:#fff;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
-  position:relative;
-}
-
-/* BACKGROUND */
-.background{
-  position:fixed;
-  inset:0;
-  background:url('https://xplearn.site/wp-content/uploads/2025/05/360_F_1079081584_rBAxIfWfaBLGG0FjT4q7vz9OUHXa1HpR.jpg') center/cover no-repeat;
-  filter:blur(2px);
-  z-index:-2;
-}
-.overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.6);
-  z-index:-1;
-}
-
-/* CARD */
-.container{max-width:420px;width:100%;z-index:2;}
-.blur-box{
-  background:rgba(255,255,255,.15);
-  backdrop-filter:blur(12px);
-  border-radius:16px;
-  padding:26px;
-  text-align:center;
-  box-shadow:0 8px 30px rgba(0,230,255,.35);
-}
-
-h1{font-size:24px;color:#00e6ff;margin-bottom:10px;text-transform:uppercase;}
-.timer{font-size:22px;font-weight:700;margin:10px 0;color:#ffeb3b;}
-
-.profile img{
-  width:150px;
-  border-radius:50%;
-  margin:10px 0;
-  border:3px solid #00e6ff;
-  box-shadow:0 0 18px #00e6ff;
-}
-
-.view-btn{
-  display:inline-block;
-  margin:15px auto;
-  padding:14px 26px;
-  border-radius:40px;
-  font-weight:700;
-  font-size:16px;
-  color:#fff;
-  text-decoration:none;
-  background:linear-gradient(45deg,#32B0ED,#3a7bd5);
-  box-shadow:0 15px 30px rgba(50,176,237,.8);
-}
-
-.footer-text{font-size:13px;opacity:.85;margin-top:12px;}
-
-.powered-by{
-  margin-top:16px;
-  font-size:12px;
-  color:#00e6ff;
-  font-weight:600;
-}
-.powered-by a{color:#00ffcc;text-decoration:none;}
-</style>
 
 <!-- 🔥 META PIXEL -->
 <script>
@@ -94,81 +17,192 @@ s.parentNode.insertBefore(t,s)
 }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init','3040268282836225');
-fbq('track','PageView');
+fbq('track','PageView',{uuid:'d9ecf06c-62c0-4c9e-8240-113d82823664'});
 </script>
 
 <noscript>
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=3040268282836225&ev=PageView&noscript=1"/>
 </noscript>
+
+<!-- ---------------- CSS ---------------- -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f8f9fb;
+  color:#111;
+  display:flex;
+  justify-content:center;
+}
+
+/* WRAPPER */
+.page{
+  width:100%;
+  max-width:420px;
+  padding:16px;
+}
+
+/* HEADER */
+.header{
+  background:#00AEEF;
+  color:#fff;
+  text-align:center;
+  padding:12px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:8px;
+  margin-bottom:18px;
+}
+.header a{
+  color:#fff;
+  text-decoration:underline;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:22px 18px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* IMAGE */
+.icon{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:12px;
+}
+
+/* TEXT */
+.title{
+  font-size:24px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.members{
+  font-size:16px;
+  color:#666;
+  margin-bottom:8px;
+}
+
+.tagline{
+  font-size:15px;
+  font-weight:500;
+  margin-bottom:12px;
+}
+
+.description{
+  font-size:15px;
+  line-height:1.55;
+  color:#444;
+  margin-bottom:16px;
+}
+
+/* COUNTDOWN */
+.countdown{
+  font-size:18px;
+  font-weight:700;
+  color:#d80000;
+  margin-bottom:16px;
+}
+
+/* BUTTON */
+.telegram-link{
+  display:block;
+  background:#0088cc;
+  color:#fff;
+  padding:14px;
+  font-size:18px;
+  font-weight:700;
+  border-radius:12px;
+  text-decoration:none;
+  margin-bottom:10px;
+  transition:.2s;
+}
+.telegram-link:hover{transform:scale(1.03);}
+
+/* FOOTER TEXT */
+.note{
+  font-size:13px;
+  color:#666;
+  margin-bottom:14px;
+}
+
+.maintained{
+  font-size:14px;
+  color:#333;
+}
+.maintained a{
+  color:#007BFF;
+  font-weight:600;
+  text-decoration:none;
+}
+</style>
 </head>
 
 <body>
 
-<div class="background"></div>
-<div class="overlay"></div>
+<div class="page">
 
-<div class="container">
-  <div class="blur-box">
+  <div class="header">
+    Don’t have Telegram?
+    <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank">
+      Download Telegram
+    </a>
+  </div>
 
-    <h1>PR@FIT 4 PR@FIT</h1>
-    <p>💰 Elite Thinking • Calculated Execution 🎯</p>
+  <div class="card">
 
-    <div class="timer">
-      Redirecting in <span id="countdown">3</span> seconds...
+    <img src="https://onebyone.site/wp-content/uploads/2026/01/pp4p.jpg" class="icon">
+
+    <div class="title">PR@FIT 4 PR@FIT</div>
+    <div class="members">89,753 members</div>
+
+    <div class="tagline">Precision Trades • Professional Mindset</div>
+
+    <div class="description">
+      Elite Thinking. Calculated Execution.<br>
+      Join the community that trades with discipline.
     </div>
 
-    <div class="profile">
-      <img src="https://onebyone.site/wp-content/uploads/2026/01/pp4p.jpg">
+    <div class="countdown">
+      Invitation closes in <span id="timer">10</span>s ⏳
     </div>
 
-    <h2>55,453 Subscribers</h2>
-    <p>✅ Precision Trades • Professional Mindset 💹</p>
-
-    <!-- ✅ TRACKED BUTTON -->
     <a href="https://t.me/+cio53yX4MSQyMjI1"
-       class="view-btn"
-       onclick="trackJoin()">
-      JOIN NOW FOR FREE
+       class="telegram-link"
+       onclick="fbq('track','Lead',{source:'Telegram'})">
+       View in Telegram 🚀
     </a>
 
-    <p class="footer-text">
-      💎 Trusted by thousands of traders worldwide 🌍
-    </p>
+    <div class="note">
+      Instant access if Telegram is installed
+    </div>
 
-    <div class="powered-by">
-      Powered by
+    <div class="maintained">
+      Ads Managed by
       <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank">
-        Nexgroww Agency
+        @Nexgroww_agency
       </a>
     </div>
 
   </div>
 </div>
 
-<!-- ⏳ TIMER + TRACKING -->
 <script>
-let timeLeft = 3;
-//const countdownEl = document.getElementById("countdown");
-//const redirectUrl = "https://t.me/+cio53yX4MSQyMjI1";
-
-const timer = setInterval(() => {
-  timeLeft--;
-//  countdownEl.textContent = timeLeft;
-
-  if (timeLeft <= 0) {
-    clearInterval(timer);
-    // window.location.href = redirectUrl; // OPTIONAL
-  }
-}, 1000);
-
-/* 🔥 BUTTON CLICK TRACKING */
-function trackJoin(){
-  fbq('track','Lead',{
-    content_name:'Telegram Join',
-    platform:'Telegram'
-  });
-}
+let sec = 10;
+const t = document.getElementById("timer");
+setInterval(()=>{
+  if(sec>0){sec--;t.textContent=sec;}
+},1000);
 </script>
 
 </body>
