@@ -1,207 +1,174 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PR@FIT 4 PR@FIT | Join Now</title>
+<title>PR@FIT 4 PR@FIT 
+ | Join Now</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 🔥 META PIXEL -->
+<!-- 🔥 Dynamic Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){
-n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','3040268282836225');
-fbq('track','PageView',{uuid:'d9ecf06c-62c0-4c9e-8240-113d82823664'});
+// init pixel
+fbq('init', '3040268282836225');
+
+// Send unique UUID as event parameter
+fbq('track', 'PageView', { uuid: "d9ecf06c-62c0-4c9e-8240-113d82823664" });
 </script>
 
+<!-- Pixel NoScript Fallback -->
 <noscript>
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=3040268282836225&ev=PageView&noscript=1"/>
 </noscript>
 
+<!-- ------------------ CSS ------------------- -->
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
-  font-family:'Poppins',sans-serif;
-  background:#f8f9fb;
-  color:#111;
-  display:flex;
-  justify-content:center;
+    font-family:Poppins,Arial,sans-serif;
+    background:#ffffff;
+    text-align:center;
+    padding:0;
 }
 
-/* WRAPPER */
-.page{
-  width:100%;
-  max-width:420px;
-  padding:12px;
-}
-
-/* HEADER */
 .header{
-  background:#00AEEF;
-  color:#fff;
-  text-align:center;
-  padding:10px;
-  font-size:13px;
-  font-weight:600;
-  border-radius:8px;
-  margin-bottom:12px;
-}
-.header a{
-  color:#fff;
-  text-decoration:underline;
+    width:100vw;
+    background:#00AEEF;
+    color:white;
+    padding:14px 0;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:18px;
 }
 
-/* CARD */
-.card{
-  background:#fff;
-  border-radius:14px;
-  padding:18px 16px;
-  text-align:center;
-  box-shadow:0 8px 24px rgba(0,0,0,.08);
-}
-
-/* IMAGE */
 .icon{
-  width:110px;
-  height:110px;
-  border-radius:50%;
-  object-fit:cover;
-  margin-bottom:8px;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:20px auto;
+    display:block;
 }
 
-/* TEXT */
-.title{
-  font-size:22px;
-  font-weight:700;
-  margin-bottom:2px;
-}
-
-.members{
-  font-size:15px;
-  color:#666;
-  margin-bottom:6px;
-}
-
-.tagline{
-  font-size:14px;
-  font-weight:500;
-  margin-bottom:8px;
-}
+.title{ font-size:28px;font-weight:bold; }
+.members{ font-size:18px;margin:8px 0;color:#444; }
+.emoji{ font-size:22px;margin:12px 0; }
 
 .description{
-  font-size:14px;
-  line-height:1.45;
-  color:#444;
-  margin-bottom:10px;
+    font-size:18px;
+    line-height:1.55;
+    color:#333;
+    margin:14px auto;
+    max-width:300px;
 }
 
-/* COUNTDOWN */
 .countdown{
-  font-size:16px;
-  font-weight:700;
-  color:#d80000;
-  margin-bottom:10px;
+    font-size:24px;
+    font-weight:bold;
+    color:#d80000;
+    margin:20px 0;
 }
 
-/* BUTTON */
 .telegram-link{
-  display:block;
-  background:#0088cc;
-  color:#fff;
-  padding:12px;
-  font-size:17px;
-  font-weight:700;
-  border-radius:10px;
-  text-decoration:none;
-  margin-bottom:8px;
-  transition:.2s;
+    background:#0088cc;
+    color:white;
+    max-width:250px;
+    padding:15px;
+    display:block;
+    margin:12px auto;
+    font-size:20px;
+    border-radius:12px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.2s;
 }
-.telegram-link:hover{transform:scale(1.02);}
+.telegram-link:hover{ transform:scale(1.05); }
 
-/* FOOTER TEXT */
-.note{
-  font-size:12px;
-  color:#666;
-  margin-bottom:8px;
-}
+.note{ font-size:14px;margin-top:10px;color:#666; }
 
 .maintained{
-  font-size:13px;
-  color:#333;
+    margin:25px 0;
+    font-size:18px;
+    color:#000;
 }
 .maintained a{
-  color:#007BFF;
-  font-weight:600;
-  text-decoration:none;
+    color:#007BFF !important;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+@media (max-width: 600px){
+    .icon{width:120px;height:120px;}
+    .title{font-size:26px;}
+    .emoji{font-size:20px;}
+    .members{font-size:17px;}
+    .description{font-size:17px;max-width:90%;}
+    .telegram-link{font-size:18px;padding:12px;max-width:230px;}
+    .countdown{font-size:22px;}
+    .note,.maintained{font-size:15px;}
+}
+
+@media (min-width:800px){
+    .icon{width:130px;height:130px;}
+    .title{font-size:22px;}
+    .emoji{font-size:18px;}
+    .members{font-size:15px;}
+    .description{font-size:15px;max-width:350px;}
+    .telegram-link{max-width:220px;padding:12px;font-size:17px;}
+    .countdown{font-size:19px;}
+    .note{font-size:13px;}
+    .maintained{font-size:15px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="page">
-
-  <div class="header">
-    Don’t have Telegram?
-    <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank">
-      Download Telegram
+<div class="header">
+    Don't have Telegram? 
+    <a href="https://telegram.me/+TRlJl628l-FkMWE9" style="color:white;text-decoration:underline;" target="_blank">
+        Download Telegram
     </a>
-  </div>
-
-  <div class="card">
-
-    <img src="https://onebyone.site/wp-content/uploads/2026/01/pp4p.jpg" class="icon">
-
-    <div class="title">PR@FIT 4 PR@FIT</div>
-    <div class="members">89,753 members</div>
-
-    <div class="tagline">Precision Trades • Professional Mindset</div>
-
-    <div class="description">
-      Elite Thinking. Calculated Execution.<br>
-      Join the community that trades with discipline.
-    </div>
-
-    <div class="countdown">
-      Invitation closes in <span id="timer">10</span>s ⏳
-    </div>
-
-    <a href="https://t.me/+cio53yX4MSQyMjI1"
-       class="telegram-link"
-       onclick="fbq('track','Lead',{source:'Telegram'})">
-       View in Telegram 🚀
-    </a>
-
-    <div class="note">
-      Instant access if Telegram is installed
-    </div>
-
-    <div class="maintained">
-      Ads Managed by
-      <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank">
-        @Nexgroww_agency
-      </a>
-    </div>
-
-  </div>
 </div>
+
+<img src="https://onebyone.site/wp-content/uploads/2026/01/pp4p.jpg" class="icon">
+
+<h2 class="title">PR@FIT 4 PR@FIT 
+</h2>
+<p class="members">89,753 members</p>
+<p class="emoji">Precision Trades. Professional Mindset.</p>
+<p class="description">“Elite Thinking. Calculated Execution.”<br />
+“Join the Community That Trades with Discipline.”<br />
+<br />
+</p>
+
+<p class="countdown">Invitation closes in <span id="timer">10</span>s ⏳</p>
+
+<a href="https://t.me/+cio53yX4MSQyMjI1" 
+   class="telegram-link"
+   onclick="fbq('track', 'JoinClick', {uuid:'d9ecf06c-62c0-4c9e-8240-113d82823664'})">
+   View in Telegram 🚀
+</a>
+
+<p class="note">Instant access if Telegram is installed.</p>
+<p class="maintained">Ads Managed by <a href="https://telegram.me/+TRlJl628l-FkMWE9">@Nexgroww_agency</a></p>
 
 <script>
 let sec = 10;
 const t = document.getElementById("timer");
-setInterval(()=>{
-  if(sec>0){sec--;t.textContent=sec;}
-},1000);
+setInterval(()=>{ if(sec > 0){ sec--; t.textContent = sec; } },1000);
 </script>
 
 </body>
